@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "id": "APT29",
+      "type": "ThreatActor",
+      "label": "APT29"
+    },
+    {
+      "id": "APT28",
+      "type": "ThreatActor",
+      "label": "APT28"
+    },
+    {
+      "id": "CozyDuke",
+      "type": "Malware",
+      "label": "CozyDuke"
+    },
+    {
+      "id": "Sofacy",
+      "type": "Malware",
+      "label": "Sofacy"
+    },
+    {
+      "id": "T1059",
+      "type": "Technique",
+      "label": "T1059 - Command and Scripting Interpreter"
+    },
+    {
+      "id": "T1566",
+      "type": "Technique",
+      "label": "T1566 - Phishing"
+    },
+    {
+      "id": "CVE-2021-26855",
+      "type": "Vulnerability",
+      "label": "CVE-2021-26855"
+    },
+    {
+      "id": "CVE-2017-0263",
+      "type": "Vulnerability",
+      "label": "CVE-2017-0263"
+    },
+    {
+      "id": "Government",
+      "type": "Target",
+      "label": "Government"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "APT29",
+      "target": "CozyDuke",
+      "type": "USES",
+      "confidence": 0.92,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT29",
+      "target": "T1059",
+      "type": "USES",
+      "confidence": 0.9,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT29",
+      "target": "CVE-2021-26855",
+      "type": "EXPLOITS",
+      "confidence": 0.85,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT29",
+      "target": "Government",
+      "type": "TARGETS",
+      "confidence": 0.95,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT28",
+      "target": "Sofacy",
+      "type": "USES",
+      "confidence": 0.91,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT28",
+      "target": "T1566",
+      "type": "USES",
+      "confidence": 0.88,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT28",
+      "target": "CVE-2017-0263",
+      "type": "EXPLOITS",
+      "confidence": 0.82,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    },
+    {
+      "source": "APT28",
+      "target": "Government",
+      "type": "TARGETS",
+      "confidence": 0.94,
+      "source_name": "Demo JSON",
+      "evidence": "Illustrative prototype relationship"
+    }
+  ]
+}
